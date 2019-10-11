@@ -48,7 +48,6 @@ public class RomanToInt_13_1 {
             result += numbers[numbers.length-1];
         return result;
     }
-
     public static void main(String[] args) {
         String s = "MCMXCIV";
         int i = romanToInt(s);
@@ -61,8 +60,7 @@ public class RomanToInt_13_1 {
 --
 思路:  
 --
-    首先将所有的组合可能性列出并添加到哈希表中 然后对字符串进行遍历，由于组合只有两种，一种是 1 个字符，一种是 2 个字符，其中 2 个字符优先于 1 个字符
-    先判断两个字符的组合在哈希表中是否存在，存在则将值取出加到结果 result 中，并向后移2个字符。不存在则将判断当前 1 个字符是否存在，存在则将值取出加 到结果 result 中，并向后移 1 个字符遍历结束返回结果 result
+首先将所有的组合可能性列出并添加到哈希表中 然后对字符串进行遍历，由于组合只有两种，一种是 1 个字符，一种是 2 个字符，其中 2 个字符优先于 1 个字符先判断两个字符的组合在哈希表中是否存在，存在则将值取出加到结果 result 中，并向后移2个字符。不存在则将判断当前 1 个字符是否存在，存在则将值取出加 到结果 result 中，并向后移 1 个字符遍历结束返回结果 result
 代码：  
 --
 <pre>
@@ -72,9 +70,7 @@ public class RomanToInt_13_1 {
  * @descriptor 罗马数字转整数
  */
 public class RomanToInt_13 {
-
     private static Map<String,Integer> map = new HashMap<String,Integer>();
-
     public static int romanToInt(String s){
         map.put("I",1);
         map.put("IV",4);
@@ -98,7 +94,6 @@ public class RomanToInt_13 {
                 result += map.get(s.substring(i, i + 1));
                 i++;
             }
-
         }
         return result;
     }
