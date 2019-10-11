@@ -47,12 +47,6 @@ public class RomanToInt_13_1 {
             result += numbers[numbers.length-1];
         return result;
     }
-    public static void main(String[] args) {
-        String s = "MCMXCIV";
-        int i = romanToInt(s);
-        System.out.println(i);
-    }
-
 }
 </pre>
 解法二：  
@@ -95,10 +89,5 @@ public class RomanToInt_13 {
         }
         return result;
     }
-    public static void main(String[] args) {
-        String s = "MCMXCIV";
-        int i = romanToInt(s);
-        System.out.println(i);
-    }
-}
+ }
 </pre>
