@@ -62,6 +62,7 @@ public class RomanToInt_13_1 {
     先判断两个字符的组合在哈希表中是否存在，存在则将值取出加到结果 result 中，并向后移2个字符。不存在则将判断当前 1 个字符是否存在，存在则将值取出加      到结果 result 中，并向后移 1 个字符
     遍历结束返回结果 result
 代码：
+<pre>
 /**
  * @author lihe
  * @date 2019/10/11 16:34
@@ -106,3 +107,4 @@ public class RomanToInt_13 {
     }
 
 }
+</pre>
