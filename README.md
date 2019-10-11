@@ -13,7 +13,6 @@
 /**
   * @author lihe
   * @date 2019/10/11 16:34
-  * @descriptor 罗马数字转整数
   */
 public class RomanToInt_13_1 {
     public static int romanToInt(String s){
@@ -67,7 +66,6 @@ public class RomanToInt_13_1 {
 /**
  * @author lihe
  * @date 2019/10/11 16:34
- * @descriptor 罗马数字转整数
  */
 public class RomanToInt_13 {
     private static Map<String,Integer> map = new HashMap<String,Integer>();
@@ -97,12 +95,10 @@ public class RomanToInt_13 {
         }
         return result;
     }
-
     public static void main(String[] args) {
         String s = "MCMXCIV";
         int i = romanToInt(s);
         System.out.println(i);
     }
-
 }
 </pre>
